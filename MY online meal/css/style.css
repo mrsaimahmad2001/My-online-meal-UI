@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* navigation */
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  /* position: fixed; */
+  background-color: rgba(35, 33, 33, 0.564);
+  border-radius: 50px;
+  position: fixed;
+}
+.logo img {
+  width: 120px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0 200px;
+}
+
+header::before {
+  content: "";
+  /* background-color: black; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  /* opacity: 0.4; */
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 0 30px;
+  color: white;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.737);
+  color: black;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+/* Home section  */
+#home::before {
+  content: "";
+  background: url(../images/home.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.98;
+}
+#home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+#home .homepage {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* padding: 80px; */
+}
+.homepage h1 {
+  font-size: 40px;
+}
+.homepage h1 {
+  padding: 0 300px;
+  color: white;
+  font-weight: bold;
+}
+.homepage p {
+  padding: 0 300px;
+}
+.btn {
+  padding: 30px;
+}
+.btn button {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: bold;
+  border: 1px solid white;
+}
+.btn button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  letter-spacing: 1px;
+}
+/* services section */
+
+#services {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.134);
+  flex-direction: column;
+}
+.servicesheading {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+#services .container {
+  display: flex;
+  padding: 40px;
+  margin: 0 10px;
+}
+#services .container #box {
+  width: 250px;
+  background-color: rgba(128, 128, 128, 0.218);
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 11px;
+}
+#services .container #box:hover {
+  background-color: rgba(45, 43, 43, 0.307);
+  letter-spacing: 1px;
+}
+#services .container #box img {
+  width: 250px;
+}
+/* about us section */
+#aboutus {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: rgba(43, 41, 41, 0.169);
+  /* display: flex; */
+}
+#aboutus .aboutheading {
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.144);
+  font-weight: bolder;
+  font-size: 60px;
+  /* border-radius: 20px; */
+  display: flex;
+  justify-content: center;
+}
+.aboutbody {
+  display: flex;
+  width: 100%;
+}
+#aboutus .left {
+  width: 60%;
+  display: flex;
+  /* height: 100vh; */
+  flex-direction: column;
+  /* align-items: center; */
+  /* text-align: center; */
+  letter-spacing: 2px;
+  justify-content: center;
+}
+.left h1 {
+  font-size: 50px;
+  padding: 30px 0;
+}
+#aboutus .right {
+  width: 40%;
+  height: 100vh;
+  /* float: right; */
+  background-color: rgba(33, 32, 32, 0.163);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.right h1 {
+  font-size: 50px;
+  padding: 30px 0;
+}
+/* contact us section  */
+#sendusmessage {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.181);
+  display: flex;
+  /* justify-content: center; */
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+}
+#sendusmessage h1 {
+  font-size: 60px;
+}
+#sendusmessage .sendus {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.sendus form input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 15px;
+  width: 400px;
+}
+.sendus form textarea {
+  padding: 10px;
+  width: 400px;
+}
+
+.sendbtn {
+  display: flex;
+  justify-content: center;
+}
+.sendbtn button {
+  width: 100px;
+  padding: 7px;
+  margin: 10px;
+  cursor: pointer;
+}
+.sendbtn button:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
